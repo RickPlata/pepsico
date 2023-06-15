@@ -10,15 +10,24 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" >
+    <nav class="navbar navbar-expand-lg navbar-dark static-top" >
         <div class="container justify-content-center"  id="nav">
           <a class="navbar-brand" href="#">
             <img src="../img/PepsiCo-Logo.png" alt="PEPSICO" height="100">
           </a>         
         </div>
       </nav>
+
+      <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.php">Inicio</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gantt.php">Reportes</a>
+            </li>            
+      </ul>
 </header>
-    <section class="vh-100 text-center">
+    <section class="text-center">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col col-xl-10">
@@ -27,7 +36,7 @@
                   <div class="col-md-6 col-lg-7 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
       
-                      <form action="./success.html" class="justify-content-center">
+                      <form method="post" action="../functions/insertReport.php" class="justify-content-center">
       
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Reporte de falla</h5>
       

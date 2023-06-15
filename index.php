@@ -9,13 +9,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" >
+        <nav class="navbar navbar-expand-lg navbar-dark static-top" >
             <div class="container justify-content-center"  id="nav">
               <a class="navbar-brand" href="#">
                 <img src="./img/PepsiCo-Logo.png" alt="PEPSICO" height="100">
               </a>         
             </div>
           </nav>
+          
     </header>
     <section class="text-center">
         <div class="container py-5 h-100">
@@ -26,7 +27,7 @@
                   <div class="col-md-6 col-lg-7 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
       
-                      <form action="./pages/falla.html">
+                      <form action="./pages/falla.php">
       
                         <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Ingresa tu GPID</h5>
       
@@ -47,6 +48,5 @@
           </div>
         </div>
       </section>
-    
 </body>
 </html>
