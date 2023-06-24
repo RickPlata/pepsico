@@ -31,8 +31,15 @@
     <section class="text-center">
         <table class="table table-striped">
             <tr>
-                <td><b>Tarea</b></td>
+                <td><b>Planta</b></td>
+                <td><b>Turno</b></td>
+                <td><b>Linea</b></td>
+                <td><b>Equipo</b></td>
+                <td><b>Incidencia</b></td>
                 <td><b>Estatus</b></td>
+                <td><b>Asignar tarea
+                      (ingresar gpid)
+                </b></td>
             </tr>
             <?php
               $sql = "SELECT * from fallas";
@@ -42,8 +49,13 @@
 
             ?>
             <tr>
+                <td><?php echo $row['planta'] ?></td>
+                <td><?php echo $row['turno'] ?></td>
+                <td><?php echo $row['linea'] ?></td>
+                <td><?php echo $row['equipo'] ?></td>
                 <td><?php echo $row['descripcion'] ?></td>
-               <?php if ($row['status'] == 1){
+
+               <?php if ($row['status'] == 1){ //variable de estatus
                 echo '<td class="table-danger">Pendiente</td>';
                }elseif ($row['status'] == 2) {
                 echo '<td class="table-warning">En proceso</td>';
@@ -52,6 +64,19 @@
                }else{
                 echo '<td>Sin información</td>';
                }?>
+
+               <td><form action="../functions/update2.php" method="post" class="justify-content-center">
+                <input type="hidden" id="id" name="id" value="<?php echo $row['id'] ?>">           
+                <input type="text" id="gpid" name="gpid" class="form-control form-control-sm">
+               </form></td>
+
+               <td>
+                <form action="../functions/update3.php" method="post" class="justify-content-center">
+                <input type="hidden" id="id" name="id" value="<?php echo $row['id'] ?>">
+                <input type="submit" class='btn btn-danger' value='Completar'>
+                </form>
+               </td>
+                              
             </tr>      
             <?php
               endforeach;

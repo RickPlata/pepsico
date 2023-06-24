@@ -46,9 +46,10 @@
 
                                     <select name="planta" id="planta" class="form-control">
                                         <option value="0">Elige una opción</option>
-                                        <option value="1">Vallejo</option>
-                                        <option value="2">Celaya</option>
-                                        <option value="3">Monterrey</option>                            
+                                        <option value="Vallejo">Vallejo</option>
+                                        <option value="Celaya">Celaya</option>
+                                        <option value="Monterrey">Monterrey</option>
+                                        <option value="Saltillo">Saltillo</option>                         
                                     </select>
                             </div>
 
@@ -57,9 +58,9 @@
 
                                     <select name="turno" id="turno" class="form-control">
                                         <option value="0">Elige una opción</option>
-                                        <option value="1">Matutino</option>
-                                        <option value="2">Vespertino</option>
-                                        <option value="3">Nocturno</option>                            
+                                        <option value="Matutino">Matutino</option>
+                                        <option value="Vespertino">Vespertino</option>
+                                        <option value="Nocturno">Nocturno</option>                            
                                     </select>
                             </div>
 
